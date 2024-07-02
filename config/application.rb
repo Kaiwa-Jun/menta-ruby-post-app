@@ -23,5 +23,8 @@ module App
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # 不必要なファイルの生成を避ける設定を追加してください！（設定追加後このコメントは消してOKです）
+
   end
 end
