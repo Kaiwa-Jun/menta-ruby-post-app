@@ -24,7 +24,16 @@ module App
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    # 不必要なファイルの生成を避ける設定を追加してください！（設定追加後このコメントは消してOKです）
-
+    config.generators do |g|
+      g.assets false
+      g.helper false
+      g.test_framework :rspec,
+                       fixtures: false,
+                       view_specs: false,
+                       helper_specs: false,
+                       routing_specs: false,
+                       controller_specs: false,
+                       request_specs: false
+    end
   end
 end
