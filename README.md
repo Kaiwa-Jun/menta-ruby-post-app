@@ -56,7 +56,51 @@ docker-compose up
 ブラウザで`http://localhost:3001/`にアクセスする
 
 エラー画面が表示されますが、`Create database`をクリックすればOKです
+<img width="1428" alt="スクリーンショット 2024-07-03 9 15 18" src="https://github.com/Kaiwa-Jun/menta-ruby-post-app/assets/76391902/992fc566-496e-42f3-a89c-8dfc3af60022">
 
 画面の確認(完成品)
 
 どんな機能あるかの説明
+
+
+## ブランチを切り替えて課題をスタートする
+
+```
+git branch
+* develop
+  feature1/skip-unnecessary-files
+  feature2/setup-routes
+  .
+  .
+  .
+
+# 課題１（feature1/skip-unnecessary-files）にブランチを切り替える例
+git checkout feature1/skip-unnecessary-files
+
+# feature1/skip-unnecessary-filesに切り替わっているか確認
+git branch
+  develop
+* feature1/skip-unnecessary-files
+```
+
+各課題の番号ごとにREADME.mdがあります。課題1の場合はREADME1.mdです
+
+README1.mdの指示（チェックボックス）を実装していく
+
+実装完了したら、Pull Requestを作成する
+
+OKであれば、私の方でdevelopブランチへマージします
+
+
+## マージされたらローカルのdevelopブランチを最新にしましょう
+
+実際の開発現場では、`開発 → PR → developへのマージ`が各開発者ごとに行われます
+
+なので、他の開発者が行ったコードの変更がリモートのdevelopブランチに集約されていきます
+
+リモートのdevelopブランチとローカルのdevelopブランチに差異が出てしまうため、定期的にローカルのdevelopを最新にしましょう
+
+```
+git checkout develop
+git pull
+```
