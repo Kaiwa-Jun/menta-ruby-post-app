@@ -9,9 +9,10 @@
 ## 環境構築
 
 ### リポジトリをforkする
-
+<img width="1427" alt="スクリーンショット 2024-07-03 10 19 21" src="https://github.com/Kaiwa-Jun/menta-ruby-post-app/assets/76391902/ee8523e8-e4f4-47ad-9aa8-7e175acbd939">
 画面右上の「Fork」をクリックします
 
+<img width="1429" alt="スクリーンショット 2024-07-03 10 24 16" src="https://github.com/Kaiwa-Jun/menta-ruby-post-app/assets/76391902/c2af1426-9262-49ea-ba8e-d4db4ceeeab2">
 「Create a new fork」画面が表示されます。以下項目を適宜入力・選択し、「Create fork」をクリックして下さい
 
 | 項目 | 概要 |
@@ -24,6 +25,7 @@
 ## forkしたリポジトリをcloneする
 
 フォークしたリポジトリを、ローカルのPCへクローン（コピー）して編集できるようにしましょう
+<img width="1428" alt="スクリーンショット 2024-07-03 10 34 46" src="https://github.com/Kaiwa-Jun/menta-ruby-post-app/assets/76391902/29e3ddd2-c435-49e3-8202-424155a1114c">
 
 フォークしたリポジトリで`Code`をクリック
 
