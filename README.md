@@ -1,24 +1,60 @@
-# README
+# 課題の進め方
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ここからは実践に近い手順で学習を進めていきます
 
-Things you may want to cover:
+今回はX（旧Twitter）のような投稿アプリを作成します
 
-* Ruby version
+課題1から課題23までを順にクリアしていくと完成する想定です
 
-* System dependencies
+## 環境構築
 
-* Configuration
+### リポジトリをforkする
 
-* Database creation
+画面右上の「Fork」をクリックします
 
-* Database initialization
+「Create a new fork」画面が表示されます。以下項目を適宜入力・選択し、「Create fork」をクリックして下さい
 
-* How to run the test suite
+| 項目 | 概要 |
+|------|------|
+| Owner | リポジトリの所有者を選択します。デフォルトでは自分自身のアカウント名が表示されているので、そのままでかまいません。 |
+| Repository name | フォークしたリポジトリの名前を付けます。デフォルトで表示されているのは、フォーク元のリポジトリ名です。特に問題なければそのままでもかまいません。 |
+| Description | フォークに関する説明を任意で入力します。デフォルトで表示されているのは、フォーク元の説明です。特に問題なければそのままでもかまいません。 |
+| Copy the main branch only | このチェックを外すと全てのブランチがコピーされます。 今回はチェックを外してください。 |
 
-* Services (job queues, cache servers, search engines, etc.)
+## forkしたリポジトリをcloneする
 
-* Deployment instructions
+フォークしたリポジトリを、ローカルのPCへクローン（コピー）して編集できるようにしましょう
 
-* ...
+フォークしたリポジトリで`Code`をクリック
+
+リポジトリのURLが表示されるので、URL欄の横にあるコピーボタンをクリック
+
+ターミナル（端末）などを開いて、リポジトリを配置したい階層までcdコマンドで移動する
+
+リポジトリをcloneする
+
+```
+git clone 【クローン先のURL】
+
+// 多分下記のようになると思いますので、実行してください
+git clone git@github.com:Kaiwa-Jun/menta-ruby-post-app.git
+```
+
+## 完成状態を確認する
+
+cloneができたらまずは完成状態を確認しましょう！
+
+```
+cd menta-ruby-post-app
+git branch // developブランチであることを確認
+docker-compose build
+docker-compose up
+```
+
+ブラウザで`http://localhost:3001/`にアクセスする
+
+エラー画面が表示されますが、`Create database`をクリックすればOKです
+
+画面の確認(完成品)
+
+どんな機能あるかの説明
