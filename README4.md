@@ -57,3 +57,4 @@
 ```
 
 - [ ]  画像の「Sign Up」「Login」を削除
+<img width="1124" alt="スクリーンショット 2024-07-09 15 29 28" src="https://github.com/Kaiwa-Jun/menta-ruby-post-app/assets/76391902/b8c52b93-6efa-4f3a-8c27-5bf6f04da80c">
