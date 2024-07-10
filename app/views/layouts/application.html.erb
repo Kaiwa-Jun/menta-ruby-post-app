@@ -4,28 +4,21 @@
     <title>MyApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag 'application' %>
   </head>
-  <body>
-	  <!-- この部分は各ページで共通で表示されるヘッダーです -->
-    <header>
-      <nav>
-       <!-- ここにホームへのリンクを追加してください -->
-      <%= link_to 'Home', root_path %>
-      <!-- ここにサインアップページへのリンクを追加してください -->
-      <%= link_to 'Sign Up', new_user_path %>
-      <!-- ここにログインページへのリンクを追加してください -->
-      <%= link_to 'Login', new_session_path %>
-      </nav>
-    </header>
+  <body class="bg-gray-100 text-gray-900">
+	  <!-- ヘッダー -->
+    <%= render 'layouts/header' %>
     
-    <!-- この部分に各ページのコンテンツが挿入されます -->
-    <%= yield %>
+        <!-- コンテンツ -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <%= yield %>
+    </main>
 
-		<!-- この部分は各ページで共通で表示されるフッターです -->
-    <footer>
-      <p>MyApp ©2024</p>
-    </footer>
+    <!-- フッター -->
+    <%= render 'layouts/footer' %>
   </body>
 </html>
